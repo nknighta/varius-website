@@ -1,0 +1,23 @@
+{
+  "name": "projectv",
+  "version": "0.4.31",
+  "main": "index.js",
+  "author": "nknight amamiya<nknight.works@variussoftware.com>",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@types/next": "^9.0.0",
+    "@types/node": "^18.14.2",
+    "@types/react": "^18.0.28",
+    "framer-motion": "^10.0.1",
+    "next": "^13.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "4.9.5"
+  }
+}
