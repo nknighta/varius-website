@@ -15,8 +15,9 @@ export default function document() {
 	return (
 		<Html>
 			<Head />
+			<title>VARIUS inc.</title>
 			<Box
-				bgColor={"#000"}
+			bgColor={"#000"}
 				textColor={"#fff"}
 				h={headerheight}
 				paddingX={30}>
