@@ -43,7 +43,7 @@ export default function document() {
 						}}
 							marginX={10}
 							as={"a"} href="/login">
-							Login
+							Sigh In
 						</Button>
 					</Box>
 				</Flex>
