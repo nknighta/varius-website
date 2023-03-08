@@ -33,13 +33,13 @@ export default function DocsIndex({children}:any) {
 							</h2>
 							<AccordionPanel pb={4}>
 								<Box as="span" flex='1' textAlign='left'>
-									<a href={"/docs/test"}>test</a>
+									<a href={"/docs/v0.4.23"}>v0.4.23</a>
 								</Box>
 							</AccordionPanel>
 						</AccordionItem>
 					</Accordion>
 				</Box>
-				<Box h={"100%"} w={"60%"}>
+				<Box h={"100%"} w={"60%"} p={10}>
 					{children}
 				</Box>
 			</Box>

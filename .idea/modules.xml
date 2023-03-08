@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../projectv-client-mobile/.idea/projectv-client-mobile.iml" filepath="$PROJECT_DIR$/../projectv-client-mobile/.idea/projectv-client-mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/varius-website.iml" filepath="$PROJECT_DIR$/.idea/varius-website.iml" />
     </modules>
   </component>
