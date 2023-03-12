@@ -1,7 +1,8 @@
-import React from 'react'
+import React ,{useState } from 'react'
 import {Box, Text,Button} from '@chakra-ui/react'
+import {type} from "os";
 
-export default function index() {
+export default function Login({children}) {
 	return (
 		<>
 			<Box
@@ -15,31 +16,50 @@ export default function index() {
 					<Text fontSize={50}>
 						Welcome.
 					</Text>
-					<Box>
-						<Inputfield inputtype="type/email" />
-					</Box>
-						<Inputfield inputtype={"type/password"}/>
-					<Box>
-					<Box>
-						<Button>Sigh in with github</Button>
-					</Box>
-						<a href="">Create accout.</a>
-					</Box>
+					<LoginForm />
+					{children}
 				</Box>
 			</Box>
 		</>
 	)
 }
 
-const Inputfield = ({inputtype}:any) => {
+
+const LoginForm = () => {
+	const [username, setUsername] = useState('');
+	const [password, setPassword] = useState('');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		console.log(`username: ${username}, password: ${password}`);
+	};
+
 	return (
-				<input type={inputtype} style={{
-								backgroundColor: '#000',
-								color: '#fff',
-								width: 550,
-								height: 55,
-								margin: "10px 10px 30px 10px ",
-								fontSize: "30px"
-							}}/>
-	)
-}
+		<form onSubmit={handleSubmit}>
+			<label>
+				<Text>UserName</Text>
+				<input   style={{
+					backgroundColor: '#000',
+					color: '#fff',
+					width: 550,
+					height: 55,
+					margin: "10px 10px 30px 10px ",
+					fontSize: "30px"}}
+						 type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+			</label>
+			<label>
+				<Text>Password:</Text>
+				<input style={{
+					backgroundColor: '#000',
+					color: '#fff',
+					width: 550,
+					height: 55,
+					margin: "10px 10px 30px 10px ",
+					fontSize: "30px"}} type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+			</label>
+			<div>
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	);
+};
